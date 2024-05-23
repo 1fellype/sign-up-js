@@ -16,10 +16,11 @@ import password_icon from '../Assets/password.png'
         </div>
 
         <div className="inputs">
-            <div className="input">
+            {action==="Login"?<div></div>:<div className="input">
                 <img src={user_icon} alt="Imagem de Usuário" />
                 <input type="text" placeholder='Nome' />
-            </div>
+            </div>}
+
             <div className="input">
                 <img src={email_icon} alt="Email do Usuário" />
                 <input type="email" placeholder='E-mail' />
@@ -30,9 +31,9 @@ import password_icon from '../Assets/password.png'
             </div>
         </div>
 
-        <div className="forgot-password">
+        {action==="Sign Up"?<div></div>:<div className="forgot-password">
             Esqueceu a senha? <span> Clique aqui!</span>
-        </div>
+        </div>}
 
         <div className="submit-container">
             <div className={action === "Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Cadastre-se</div>
