@@ -15,24 +15,24 @@ import password_icon from '../Assets/password.png'
         <div className="inputs">
             <div className="input">
                 <img src={user_icon} alt="Imagem de Usuário" />
-                <input type="text" />
+                <input type="text" placeholder='Nome' />
             </div>
             <div className="input">
                 <img src={email_icon} alt="Email do Usuário" />
-                <input type="email" />
+                <input type="email" placeholder='E-mail' />
             </div>
             <div className="input">
                 <img src={password_icon} alt="Senha do Usuário" />
-                <input type="password" />
+                <input type="password" placeholder='Senha' />
             </div>
         </div>
 
         <div className="forgot-password">
             Esqueceu a senha? <span>Clique aqui!</span>
         </div>
-        
+
         <div className="submit-container">
-            <div className="submit">Sign Up</div>
+            <div className="submit">Cadastre-se</div>
             <div className="submit">Login</div>
         </div>
     </div>
